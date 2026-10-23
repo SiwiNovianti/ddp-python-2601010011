@@ -1,10 +1,12 @@
-
+#masukkan panjang dan lebar persegi panjang
 panjang = float(input("Masukkan panjang persegi panjang: "))
 lebar = float(input("Masukkan lebar persegi panjang: "))
 
+#menghitung luas dan keliling persegi panjang dan menampilkan hasilnya
 Luas = panjang * lebar
 print(f"Luas persegi panjang adalah: {Luas} m2")
 
+#menghitung keliling persegi panjang dan menampilkan hasilnya
 Keliling = 2 * (panjang + lebar)
 print(f"Keliling persegi panjang adalah: {Keliling} m")
 
