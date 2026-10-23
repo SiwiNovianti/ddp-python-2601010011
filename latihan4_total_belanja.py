@@ -1,12 +1,15 @@
-nama_barang = input("Masukkan nama barang: ")
-harga_satuan = float(input("Masukkan harga satuan barang:"))
-jumlah_barang = int(input("Masukkan jumlah barang: "))
+#pengguna memasukkan nama barang, harga satuan, dan jumlah barang
+nama_barang, harga_satuan, jumlah_barang = input("Masukkan nama barang, harga satuan, dan jumlah barang (pisahkan dengan koma): ").split(",")
 
+#mengubah tipe data input menjadi string dan integer
+nama_barang = str(nama_barang)
+harga_satuan = int(harga_satuan)
+jumlah_barang = int(jumlah_barang)
+
+#menghitung subtotal, PPN, dan total bayar
 Subtotal = harga_satuan * jumlah_barang
-print(f"Subtotal belanja {nama_barang} adalah: Rp. {Subtotal}")
-
 PPN = 0.11 * Subtotal
-print(f"PPN 11% dari subtotal belanja {nama_barang} adalah: Rp. {PPN}")
-
 Total_bayar = Subtotal + PPN
-print(f"Total bayar belanja {nama_barang} adalah: Rp. {Total_bayar}")
+
+print(f"Subtotal belanja {nama_barang} adalah: Rp {Subtotal}, PPN yang dikenakan adalah: Rp {PPN}, Total bayar yang harus dibayarkan adalah: Rp {Total_bayar}")
+
